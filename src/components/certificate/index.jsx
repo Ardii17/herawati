@@ -2,6 +2,111 @@
 
 import React, { useState, useEffect, forwardRef } from "react";
 
+const certificatesInfo = [
+  {
+    alt: "Sertifikat 1",
+    title: "Setifikat KMI Expo XV 2024",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam KMI Expo XV 2024.",
+  },
+  {
+    alt: "Sertifikat 2",
+    title: "Setifikat Fashion Design Competition 2024",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam Fashion Design Competition 2024.",
+  },
+  {
+    alt: "Sertifikat 3",
+    title: "Setifikat Internation Art & Craft Exhibition 2025",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam International Art & Craft Exhibition 2025.",
+  },
+  {
+    alt: "Sertifikat 4",
+    title: "Setifikat Qoriah",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam bidang Qoriah.",
+  },
+  {
+    alt: "Sertifikat 5",
+    title: "Setifikat Qoriat Terbaik",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Qoriat Terbaik.",
+  },
+  {
+    alt: "Sertifikat 6",
+    title: "Piagam Penghargaan Panilai Penyelenggara Sanlat",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas kontribusi saya sebagai panilai penyelenggara Sanlat.",
+  },
+  {
+    alt: "Sertifikat 7",
+    title: "Piagam Penghargaan",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas kontribusi saya dalam berbagai kegiatan.",
+  },
+  {
+    alt: "Sertifikat 8",
+    title: "Piagam Penghargaan Lomba Menggambar Juara 2",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Juara 2 dalam lomba menggambar.",
+  },
+  {
+    alt: "Sertifikat 9",
+    title: "Sertifikat Partisipasi",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam berbagai kegiatan.",
+  },
+  {
+    alt: "Sertifikat 10",
+    title: "Sertifikat Lolos Internal KMI Expo XV 2024",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas keberhasilan saya lolos seleksi internal KMI Expo XV 2024.",
+  },
+  {
+    alt: "Sertifikat 11",
+    title: "Sertifikat Juara 1 Lomba MTQ",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas keberhasilan saya lolos seleksi internal Fashion Design Competition 2024.",
+  },
+  {
+    alt: "Sertifikat 12",
+    title: "Syahadah Tahfidz Quran 30 Juz",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas pencapaian saya dalam menghafal Al-Quran 30 Juz.",
+  },
+  {
+    alt: "Sertifikat 13",
+    title: "Sertifikat Seminar Nasional",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam Seminar Nasional.",
+  },
+  {
+    alt: "Sertifikat 14",
+    title: "Sertifikat Seminar Nasional Budaya Sunda",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam Seminar Nasional Budaya Sunda.",
+  },
+  {
+    alt: "Sertifikat 15",
+    title: "Sertifikat Seminar Kebangsaan",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam Seminar Kebangsaan.",
+  },
+  {
+    alt: "Sertifikat 16",
+    title: "Sertifikat P2MW",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam Program Pemberdayaan Mahasiswa Wirausaha (P2MW).",
+  },
+  {
+    alt: "Sertifikat 17",
+    title: "Sertifikat Kompetisi",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam berbagai kompetisi.",
+  },
+];
+
 const CertificateCard = ({ imgSrc, alt, title, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => setIsModalOpen(true);
@@ -61,9 +166,11 @@ const CertificatePage = forwardRef((props, ref) => {
         const mappedData = data.map((item, index) => ({
           id: index,
           imgSrc: item.secure_url,
-          alt: item.public_id.split("/").pop(),
-          title: item.public_id.split("/").pop(),
-          description: "Sertifikat yang telah saya peroleh",
+          alt: certificatesInfo[index]?.title || `Sertifikat ${index + 1}`,
+          title: certificatesInfo[index]?.title || `Sertifikat ${index + 1}`,
+          description:
+            certificatesInfo[index]?.description ||
+            `Deskripsi Sertifikat ${index + 1}`,
         }));
         setCertificatesData(mappedData);
       });

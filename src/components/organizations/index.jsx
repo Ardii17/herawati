@@ -5,8 +5,8 @@ import React from "react";
 const organizationalExperiences = [
   {
     id: 1,
-    organization: "Badan Eksekutif Mahasiswa (BEM) Universitas Koding",
-    position: "Ketua Departemen Komunikasi & Informasi",
+    organization: "Himpunan Mahasiswa Rekan Kriya Tekstil",
+    position: "Departemen minat dan bakat",
     period: "Maret 2023 - April 2024",
     description: [
       "Mengelola strategi komunikasi internal dan eksternal BEM.",
@@ -17,24 +17,13 @@ const organizationalExperiences = [
   },
   {
     id: 2,
-    organization: "Himpunan Mahasiswa Teknik Informatika (HMTI)",
-    position: "Anggota Divisi Pengembangan Web",
+    organization: "Unit Kegiatan Mahasiswa (UKM) Paduan Suara",
+    position: "Divisi Kreasi Busana",
     period: "Februari 2022 - Maret 2023",
     description: [
       "Berkontribusi dalam pengembangan dan pemeliharaan website resmi HMTI.",
       "Mengadakan workshop mingguan tentang dasar-dasar HTML, CSS, dan JavaScript untuk anggota baru.",
       "Terlibat dalam panitia acara 'IT Festival 2022' sebagai koordinator tim teknis website.",
-    ],
-  },
-  {
-    id: 3,
-    organization: "Unit Kegiatan Mahasiswa (UKM) Fotografi 'Lensa Kita'",
-    position: "Sekretaris",
-    period: "Januari 2021 - Januari 2022",
-    description: [
-      "Mengurus administrasi, surat-menyurat, dan arsip dokumen organisasi.",
-      "Menyusun proposal kegiatan dan laporan pertanggungjawaban untuk setiap acara.",
-      "Mengorganisir jadwal rapat rutin dan pameran foto tahunan.",
     ],
   },
 ];
