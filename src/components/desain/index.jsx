@@ -148,7 +148,7 @@ const DesainPage = forwardRef((props, ref) => {
           : "bg-gray-200 text-gray-700 hover:bg-gray-300"
       }`}
     >
-      Desain {categoryName}
+      {categoryName}
     </button>
   );
 
@@ -167,8 +167,8 @@ const DesainPage = forwardRef((props, ref) => {
 
       <div className="w-full flex flex-col items-center gap-4">
         <div className="flex flex-wrap justify-center items-center gap-4">
-          <CategoryButton categoryName="Digital" />
-          <CategoryButton categoryName="Manual" />
+          <CategoryButton categoryName="Desain Digital" />
+          <CategoryButton categoryName="Desain Manual" />
           <CategoryButton categoryName="Hasil Kriya" />
           <CategoryButton categoryName="Moodboard" />
           <CategoryButton categoryName="Pengalaman" />

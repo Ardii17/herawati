@@ -20,7 +20,7 @@ const ArrowIcon = () => (
 
 // Kita bisa mendefinisikan detail WhatsApp di luar komponen agar lebih rapi
 const phoneNumber = "6282226359353"; // Gunakan format internasional tanpa '+'
-const message = "Halo Herawati, saya tertarik dengan jasa makeup Anda."; // Pesan default
+const message = "Halo Herawati, saya tertarik dengan jasa Anda."; // Pesan default
 const encodedMessage = encodeURIComponent(message); // Mengubah spasi dan karakter lain menjadi format URL
 
 // Membuat URL WhatsApp lengkap
