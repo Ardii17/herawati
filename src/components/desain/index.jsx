@@ -3,7 +3,7 @@
 import React, { useState, useEffect, forwardRef } from "react";
 import Image from "next/image";
 
-// --- Komponen Kartu Desain ---
+// --- Komponen Kartu Desain (Tidak ada perubahan di sini) ---
 const DesignCard = ({ src, alt, title }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
@@ -17,7 +17,7 @@ const DesignCard = ({ src, alt, title }) => {
             className="object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105"
             loading="lazy"
             placeholder="blur"
-            blurDataURL={`${src}?w=10&q=10`} // efek blur saat loading
+            blurDataURL={`${src}?w=10&q=10`}
             onError={(e) => {
               e.target.onerror = null;
               e.target.src =
@@ -60,7 +60,16 @@ const DesignCard = ({ src, alt, title }) => {
 
 // --- Halaman Utama Rekap Desain ---
 const DesainPage = forwardRef((props, ref) => {
-  const [activeCategory, setActiveCategory] = useState("Digital");
+  // --- DATA KATEGORI (SUMBER KEBENARAN TUNGGAL) ---
+  const categories = [
+    { id: "Digital", label: "Desain Digital" },
+    { id: "Manual", label: "Desain Manual" },
+    { id: "Hasil Kriya", label: "Hasil Kriya" },
+    { id: "Moodboard", label: "Moodboard" },
+    { id: "Pengalaman", label: "Pengalaman" },
+  ];
+
+  const [activeCategory, setActiveCategory] = useState("Digital"); // State awal menggunakan ID
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(12);
 
@@ -70,20 +79,25 @@ const DesainPage = forwardRef((props, ref) => {
   const [pengalamanDesigns, setPengalamanDesigns] = useState([]);
   const [kriyaDesigns, setKriyaDesigns] = useState([]);
 
-  // Ambil data dari Cloudinary
+  // Ambil data dari Cloudinary (tidak ada perubahan)
   useEffect(() => {
     const fetchDesigns = async (folder, setState) => {
-      const res = await fetch(
-        `/api/get-images?folder=images/designs/${folder}`
-      );
-      const data = await res.json();
-      const mapped = data.map((item, idx) => ({
-        id: idx,
-        src: item.secure_url,
-        alt: item.public_id.split("/").pop(),
-        title: item.public_id.split("/").pop(),
-      }));
-      setState(mapped);
+      try {
+        const res = await fetch(
+          `/api/get-images?folder=images/designs/${folder}`
+        );
+        const data = await res.json();
+        const mapped = data.map((item, idx) => ({
+          id: `${folder}-${idx}`, // Memberikan key yang lebih unik
+          src: item.secure_url,
+          alt: item.public_id.split("/").pop(),
+          title: item.public_id.split("/").pop().replace(/_/g, " "), // Mengganti underscore dengan spasi
+        }));
+        setState(mapped);
+      } catch (error) {
+        console.error(`Failed to fetch designs for ${folder}:`, error);
+        setState([]); // Set state ke array kosong jika gagal
+      }
     };
 
     fetchDesigns("digital", setDesignDigital);
@@ -93,6 +107,7 @@ const DesainPage = forwardRef((props, ref) => {
     fetchDesigns("kriya", setKriyaDesigns);
   }, []);
 
+  // Subjudul menggunakan key yang konsisten dengan ID kategori
   const categorySubtitles = {
     Digital:
       "Rekap desain digital berisi karya akademik dan profesional, mulai dari busana hingga motif, yang sebagian besar dibuat dengan CorelDRAW.",
@@ -105,7 +120,8 @@ const DesainPage = forwardRef((props, ref) => {
       "Halaman ini memuat pengalaman saya, mulai dari organisasi, tutor privat, model fashion show, memimpin pameran seni dan acara fotografi, hingga KKN.",
   };
 
-  let displayedDesigns;
+  // Logika switch sekarang bekerja dengan benar
+  let displayedDesigns = []; // Inisialisasi sebagai array kosong
   switch (activeCategory) {
     case "Manual":
       displayedDesigns = designManual;
@@ -138,16 +154,18 @@ const DesainPage = forwardRef((props, ref) => {
     setCurrentPage(1);
   };
 
-  const CategoryButton = ({ categoryName }) => (
+  // Komponen tombol tidak perlu di-nest, bisa langsung di sini
+  // untuk akses langsung ke state `activeCategory`
+  const CategoryButton = ({ categoryId, categoryLabel }) => (
     <button
-      onClick={() => handleCategoryChange(categoryName)}
+      onClick={() => handleCategoryChange(categoryId)}
       className={`py-2 px-6 rounded-full font-semibold transition-all duration-300 ${
-        activeCategory === categoryName
+        activeCategory === categoryId // Perbandingan menggunakan ID yang konsisten
           ? "bg-[#47240E] text-white shadow-lg"
           : "bg-gray-200 text-gray-700 hover:bg-gray-300"
       }`}
     >
-      {categoryName}
+      {categoryLabel}
     </button>
   );
 
@@ -166,14 +184,17 @@ const DesainPage = forwardRef((props, ref) => {
 
       <div className="w-full flex flex-col items-center gap-4">
         <div className="flex flex-wrap justify-center items-center gap-4">
-          <CategoryButton categoryName="Desain Digital" />
-          <CategoryButton categoryName="Desain Manual" />
-          <CategoryButton categoryName="Hasil Kriya" />
-          <CategoryButton categoryName="Moodboard" />
-          <CategoryButton categoryName="Pengalaman" />
+          {/* --- RENDER TOMBOL SECARA DINAMIS --- */}
+          {categories.map((cat) => (
+            <CategoryButton
+              key={cat.id}
+              categoryId={cat.id}
+              categoryLabel={cat.label}
+            />
+          ))}
         </div>
 
-        <div className="w-full max-w-2xl text-center mt-2 h-10">
+        <div className="w-full max-w-2xl text-center mt-2 h-12 md:h-10">
           <p key={activeCategory} className="text-gray-600 animate-fade-in">
             {categorySubtitles[activeCategory]}
           </p>
@@ -198,7 +219,7 @@ const DesainPage = forwardRef((props, ref) => {
               setCurrentPage((prev) => (prev > 1 ? prev - 1 : prev))
             }
             disabled={currentPage === 1}
-            className="bg-[#47240E] text-white py-2 px-4 rounded font-medium hover:bg-[#5a3b1c] disabled:opacity-50"
+            className="bg-[#47240E] text-white py-2 px-4 rounded font-medium hover:bg-[#5a3b1c] disabled:opacity-50 transition-opacity"
           >
             Sebelumnya
           </button>
@@ -210,7 +231,7 @@ const DesainPage = forwardRef((props, ref) => {
               setCurrentPage((prev) => (prev < totalPages ? prev + 1 : prev))
             }
             disabled={currentPage === totalPages}
-            className="bg-[#47240E] text-white py-2 px-4 rounded font-medium hover:bg-[#5a3b1c] disabled:opacity-50"
+            className="bg-[#47240E] text-white py-2 px-4 rounded font-medium hover:bg-[#5a3b1c] disabled:opacity-50 transition-opacity"
           >
             Berikutnya
           </button>
