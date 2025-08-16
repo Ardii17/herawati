@@ -6,12 +6,12 @@ const workExperiences = [
   {
     id: 1,
     company: "-",
-    position: "Guru Privat Lukis, Gambar, Vocal & Mengjasi",
+    position: "Guru Privat Lukis, Gambar, Vocal & Mengaji",
     type: "Part Time",
     location: "Bandung, Indonesia",
     period: "Agustus 2024 - Sekarang",
     description: [
-      "Mengajar les privat seni rupa (lukis dan gambar), voak, dan mengaji. Mencakup teori, teknik, serta pembentukan keterampilan sesuai kebutuhan peserta",
+      "Mengajar les privat seni rupa (lukis dan gambar), , dan mengaji. Mencakup teori, teknik, serta pembentukan keterampilan sesuai kebutuhan peserta",
     ],
   },
   {
@@ -41,6 +41,69 @@ const workExperiences = [
     period: "Januari 2023 - Mei 2023",
     description: [
       "Menjalankan penjualan produk sebagai reseller, dropshiper, dan affiliator yang mencakup promosi, manajemen pesanan, dan layanan pelanggan.",
+    ],
+  },
+  {
+    id: 5,
+    company: "CV. Sekain Sebaju",
+    position: "Magang Divisi Desain & QC",
+    type: "Paruh Waktu",
+    location: "Remote",
+    period: "2024",
+    description: [
+      "Membantu tim desain dalam pembuatan konsep fashion (sketsa/manual/digital).",
+      "Melakukan riset tren fashion terkini dan menyesuaikan dengan identitas brand.",
+
+      "Membuat mockup desain produk sesuai kebutuhan produksi.",
+
+      "Menyiapkan moodboard dan reference board untuk pengembangan koleksi.",
+
+      "Memberikan ide kreatif untuk variasi desain produk.",
+
+      "Quality Control (QC)",
+
+      "Melakukan pengecekan kualitas bahan sebelum diproduksi.",
+
+      "Mengawasi hasil produksi agar sesuai dengan standar desain dan kualitas perusahaan.",
+
+      "Memeriksa detail jahitan, finishing, dan kesesuaian ukuran produk.",
+
+      "Membuat laporan evaluasi hasil QC kepada supervisor.",
+
+      "Berkoordinasi dengan tim produksi apabila ada ketidaksesuaian atau cacat produk.",
+    ],
+  },
+  {
+    id: 6,
+    company: "-",
+    position: "Vocalis Band",
+    type: "Paruh Waktu",
+    location: "-",
+    period: "2019 - 2020",
+    description: [
+      "Menjadi vokalis di berbagai acara resmi maupun non-resmi, seperti seminar, pernikahan, dan pentas seni.",
+    ],
+  },
+  {
+    id: 7,
+    company: "-",
+    position: "Qiroat",
+    type: "Paruh Waktu",
+    location: "-",
+    period: "-",
+    description: [
+      "Membawakan qiroat pada acara pembukaan resmi, pernikahan, hingga pertunangan.",
+    ],
+  },
+  {
+    id: 8,
+    company: "-",
+    position: "Joki Desain",
+    type: "Paruh Waktu",
+    location: "-",
+    period: "-",
+    description: [
+      "Menggarap berbagai desain untuk kebutuhan banner, sertifikat, dan baju sesuai permintaan klien.",
     ],
   },
 ];

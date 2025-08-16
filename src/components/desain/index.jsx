@@ -95,15 +95,14 @@ const DesainPage = forwardRef((props, ref) => {
 
   const categorySubtitles = {
     Digital:
-      "Kreasi digital yang dihasilkan melalui perangkat lunak desain visual.",
-    Manual:
-      "Sketsa dan ilustrasi yang dibuat secara tradisional dengan tangan.",
+      "Rekap desain digital berisi karya akademik dan profesional, mulai dari busana hingga motif, yang sebagian besar dibuat dengan CorelDRAW.",
+    Manual: "Rekap ini memuat karya gambar dari masa kecil hingga perkuliahan.",
     "Hasil Kriya":
-      "Karya seni kerajinan tangan yang menggabungkan nilai fungsi dan estetika.",
+      "Halaman ini memuat karya kriya rancangan saya, mulai dari aksesori, interior, pakaian, hingga Tugas Akhir.",
     Moodboard:
-      "Kumpulan inspirasi visual untuk memandu arah kreatif proyek desain.",
+      "Halaman ini berisi potongan moodboard dan hasil editing digital berupa poster serta katalog yang dikerjakan dengan Canva.",
     Pengalaman:
-      "Dokumentasi dari berbagai pameran, workshop, dan kegiatan desain lainnya.",
+      "Halaman ini memuat pengalaman saya, mulai dari organisasi, tutor privat, model fashion show, memimpin pameran seni dan acara fotografi, hingga KKN.",
   };
 
   let displayedDesigns;

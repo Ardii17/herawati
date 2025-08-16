@@ -5,25 +5,79 @@ import React from "react";
 const organizationalExperiences = [
   {
     id: 1,
-    organization: "Himpunan Mahasiswa Rekan Kriya Tekstil",
-    position: "Departemen minat dan bakat",
-    period: "Maret 2023 - April 2024",
+    organization: "Himpunan Mahasiswa Rekan Kriya Tekstil (HIMA REKAT)",
+    position: "Anggota Departemen Minat dan Bakat",
+    period: "Februari 2022 – Maret 2023",
     description: [
-      "Mengelola strategi komunikasi internal dan eksternal BEM.",
-      "Bertanggung jawab atas semua publikasi media sosial dan website resmi.",
-      "Memimpin tim yang terdiri dari 15 anggota untuk menjalankan program kerja departemen.",
-      "Berhasil meningkatkan engagement media sosial sebesar 40% dalam satu periode.",
+      "Menyusun strategi serta menjalankan program kerja departemen.",
+      "Mengelola kegiatan pelatihan fashion show dan perlombaan kreatif.",
+      "Menjadi penghubung informasi kegiatan pameran lintas kampus.",
+      "Berkontribusi dalam program yang berkaitan dengan desain dan pengembangan kreativitas mahasiswa.",
     ],
   },
   {
     id: 2,
     organization: "Unit Kegiatan Mahasiswa (UKM) Paduan Suara",
-    position: "Divisi Kreasi Busana",
-    period: "Februari 2022 - Maret 2023",
+    position:
+      "Divisi Kreasi Busana Mempersiapkan konsep dan tampilan busana untuk anggota paduan suara.",
+    period: "2022 - 2023",
     description: [
-      "Berkontribusi dalam pengembangan dan pemeliharaan website resmi HMTI.",
-      "Mengadakan workshop mingguan tentang dasar-dasar HTML, CSS, dan JavaScript untuk anggota baru.",
-      "Terlibat dalam panitia acara 'IT Festival 2022' sebagai koordinator tim teknis website.",
+      "Menjadi stylist dalam penampilan panggung agar sesuai tema dan karakter acara.",
+    ],
+  },
+  {
+    id: 3,
+    organization: "Pameran TPB “Upagga Artista”",
+    position: "Ketua Pelaksana",
+    period: "2021",
+    description: [
+      "Memimpin persiapan dan pelaksanaan pameran karya mahasiswa baru Kriya.",
+      "Mengatur koordinasi tim untuk menampilkan karya secara kreatif dan representatif.",
+      "Mengelola jalannya acara agar sesuai dengan visi pameran.",
+    ],
+  },
+  {
+    id: 4,
+    organization: "Pameran Fotografi “SEFOKA”",
+    position: "Ketua Divisi Acara",
+    period: "2023",
+    description: [
+      "Merancang konsep acara pameran fotografi mahasiswa.",
+      "Mengatur alur acara, termasuk pembukaan, sesi pameran, hingga penutupan.",
+      "Berkoordinasi dengan divisi lain untuk kelancaran keseluruhan acara.",
+    ],
+  },
+  {
+    id: 5,
+    organization: "Hizbul Wathan (HW) SMA",
+    position: "Ketua Kobilah Perempuan",
+    period: "2019 - 2020",
+    description: [
+      "Mengatur kegiatan organisasi kepanduan tingkat SMA.",
+      "Membina anggota perempuan dalam kegiatan latihan, kedisiplinan, dan pengembangan karakter.",
+      "Mengkoordinasi pelaksanaan kegiatan internal maupun eksternal sekolah.",
+    ],
+  },
+  {
+    id: 6,
+    organization: "Ikatan Pelajar Muhammadiyah (IPM) SMA",
+    position: "Ketua Divisi Kader",
+    period: "2018 - 2019",
+    description: [
+      "Bertanggung jawab atas perekrutan, pembinaan, dan pelatihan anggota baru.",
+      "Mengelola program kaderisasi untuk meningkatkan kepemimpinan dan organisasi siswa.",
+      "Berperan dalam menjaga keberlangsungan regenerasi organisasi.",
+    ],
+  },
+  {
+    id: 7,
+    organization: "-",
+    position: "Vokalis Band SMA",
+    period: "2018 - 2020",
+    description: [
+      "Membawakan lagu di berbagai genre sesuai kebutuhan acara.",
+      "Mengatur koordinasi tim untuk menampilkan karya secara kreatif dan representatif.",
+      "Mengelola jalannya acara agar sesuai dengan visi pameran.",
     ],
   },
 ];
