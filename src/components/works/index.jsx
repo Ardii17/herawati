@@ -92,7 +92,7 @@ const workExperiences = [
     location: "-",
     period: "-",
     description: [
-      "Membawakan qiroat pada acara pembukaan resmi, pernikahan, hingga pertunangan.",
+      "Membawakan qiroat pada acara pembukaan resmi, pertunangan, hingga pernikahan.",
     ],
   },
   {

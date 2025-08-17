@@ -69,17 +69,6 @@ const organizationalExperiences = [
       "Berperan dalam menjaga keberlangsungan regenerasi organisasi.",
     ],
   },
-  {
-    id: 7,
-    organization: "-",
-    position: "Vokalis Band SMA",
-    period: "2018 - 2020",
-    description: [
-      "Membawakan lagu di berbagai genre sesuai kebutuhan acara.",
-      "Mengatur koordinasi tim untuk menampilkan karya secara kreatif dan representatif.",
-      "Mengelola jalannya acara agar sesuai dengan visi pameran.",
-    ],
-  },
 ];
 
 // Komponen untuk ikon centang pada list deskripsi

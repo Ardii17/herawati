@@ -35,15 +35,15 @@ const certificatesInfo = [
   },
   {
     alt: "Sertifikat 6",
-    title: "Piagam Penghargaan Panilai Penyelenggara Sanlat",
+    title: "Piagam Penghargaan lomba kejuaraan MTQ",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas kontribusi saya sebagai panilai penyelenggara Sanlat.",
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam lomba kejuaraan MTQ yang berhasil mendapatkan juara ke 3.",
   },
   {
     alt: "Sertifikat 7",
-    title: "Piagam Penghargaan",
+    title: "Piagam Penghargaan Kejuaraan MTQ",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas kontribusi saya dalam berbagai kegiatan.",
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam kejuaraan MTQ yang berhasil mendapatkan juara ke 2.",
   },
   {
     alt: "Sertifikat 8",
@@ -67,13 +67,13 @@ const certificatesInfo = [
     alt: "Sertifikat 11",
     title: "Sertifikat Juara 1 Lomba MTQ",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas keberhasilan saya lolos seleksi internal Fashion Design Competition 2024.",
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Juara 1 dalam lomba MTQ.",
   },
   {
     alt: "Sertifikat 12",
-    title: "Syahadah Tahfidz Quran 30 Juz",
+    title: "Syahadah Tahfidz Quran Juz 30",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas pencapaian saya dalam menghafal Al-Quran 30 Juz.",
+      "Sertifikat ini diberikan sebagai pengakuan atas pencapaian saya dalam menghafal Al-Quran Juz 30.",
   },
   {
     alt: "Sertifikat 13",
@@ -101,9 +101,9 @@ const certificatesInfo = [
   },
   {
     alt: "Sertifikat 17",
-    title: "Sertifikat Kompetisi",
+    title: "Sertifikat BNSP",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam berbagai kompetisi.",
+      "Sertifikat ini diberikan sebagai pengakuan atas partisipasi saya dalam berbagai Kompetensi.",
   },
 ];
 
