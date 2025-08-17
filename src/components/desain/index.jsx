@@ -115,7 +115,7 @@ const DesainPage = forwardRef((props, ref) => {
       "Kriya rancangan: aksesori, interior, pakaian, hingga Tugas Akhir.",
     Moodboard: "Moodboard & desain digital dengan Canva (poster, katalog).",
     Pengalaman:
-      "Pengalaman organisasi, tutor, model, pameran seni, hingga KKN.",
+      "Pengalaman organisasi, qiroah, tutor, model, pameran seni, hingga KKN.",
   };
 
 
