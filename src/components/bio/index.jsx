@@ -125,7 +125,7 @@ const DownloadIcon = () => (
 // Pisahkan data agar mudah diubah
 const biodataDetails = [
   { label: "Nama", value: "Herawati" },
-  { label: "Email", value: "hawatanaksarbini@gmail.com" },
+  { label: "Email", value: "khadijahhawa62@gmail.com" },
   { label: "Telepon", value: "+6282226359353" },
   { label: "Tanggal Lahir", value: "29 Agustus 2002" },
   { label: "Jenis Kelamin", value: "Perempuan" },
