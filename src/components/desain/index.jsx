@@ -109,16 +109,15 @@ const DesainPage = forwardRef((props, ref) => {
 
   // Subjudul menggunakan key yang konsisten dengan ID kategori
   const categorySubtitles = {
-    Digital:
-      "Rekap desain digital berisi karya akademik dan profesional, mulai dari busana hingga motif, yang sebagian besar dibuat dengan CorelDRAW.",
-    Manual: "Rekap ini memuat karya gambar dari masa kecil hingga perkuliahan.",
+    Digital: "Desain digital akademik & profesional dengan CorelDRAW.",
+    Manual: "Karya gambar dari masa kecil hingga kuliah.",
     "Hasil Kriya":
-      "Halaman ini memuat karya kriya rancangan saya, mulai dari aksesori, interior, pakaian, hingga Tugas Akhir.",
-    Moodboard:
-      "Halaman ini berisi potongan moodboard dan hasil editing digital berupa poster serta katalog yang dikerjakan dengan Canva.",
+      "Kriya rancangan: aksesori, interior, pakaian, hingga Tugas Akhir.",
+    Moodboard: "Moodboard & desain digital dengan Canva (poster, katalog).",
     Pengalaman:
-      "Halaman ini memuat pengalaman saya, mulai dari organisasi, tutor privat, model fashion show, memimpin pameran seni dan acara fotografi, hingga KKN.",
+      "Pengalaman organisasi, tutor, model, pameran seni, hingga KKN.",
   };
+
 
   // Logika switch sekarang bekerja dengan benar
   let displayedDesigns = []; // Inisialisasi sebagai array kosong
