@@ -174,9 +174,13 @@ export default function BiodataPage({ ref }) {
               maupun manual, perancangan produk kreatif, serta pengelolaan
               proyek. Saya senang dan antusias untuk terus belajar serta
               berkolaborasi dalam proyek-proyek yang menantang. Di luar
-              pekerjaan dan studi, saya senang mengeksplorasi ide baru,
-              menggambar, bernyanyi, serta menciptakan karya yang bermanfaat
-              bagi lingkungan dan masyarakat.
+              pekerjaan dan studi, saya aktif mengajar dalam berbagai bidang,
+              seperti mengaji, vokal, menggambar, dan melukis. Saya juga
+              berpengalaman mengisi acara resmi maupun non-resmi, mulai dari
+              membawakan pembukaan dengan lantunan ayat suci hingga bernyanyi
+              sebagai pengisi acara. Kegiatan tersebut semakin mengasah
+              kemampuan komunikasi, kepercayaan diri, serta keterampilan saya
+              dalam berinteraksi dengan beragam audiens.
             </p>
           </div>
 
