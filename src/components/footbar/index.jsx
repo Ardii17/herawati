@@ -1,7 +1,7 @@
 import React from "react";
 import { Roboto_Slab } from "next/font/google";
 import {
-  FaFacebookF,
+  FaBehanceSquare,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -49,12 +49,12 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://www.facebook.com"
+              href="https://www.behance.net/anaksahawat"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
-              <FaFacebookF />
+              <FaBehanceSquare />
             </a>
             <a
               href="https://www.linkedin.com"
