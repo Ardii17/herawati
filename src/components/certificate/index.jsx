@@ -23,7 +23,7 @@ const certificatesInfo = [
   },
   {
     alt: "Sertifikat 4",
-    title: "Setifikat Qoriah",
+    title: "Sertifikat Qoriah",
     description:
       "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam bidang Qoriah.",
   },
@@ -34,10 +34,10 @@ const certificatesInfo = [
       "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Qoriat Terbaik.",
   },
   {
-    alt: "Sertifikat 6",
-    title: "Piagam Penghargaan lomba kejuaraan MTQ",
+    alt: "Sertifikat 11",
+    title: "Sertifikat Juara 1 Lomba MTQ",
     description:
-      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam lomba kejuaraan MTQ yang berhasil mendapatkan juara ke 3.",
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Juara 1 dalam lomba MTQ.",
   },
   {
     alt: "Sertifikat 7",
@@ -52,6 +52,12 @@ const certificatesInfo = [
       "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Juara 2 dalam lomba menggambar.",
   },
   {
+    alt: "Sertifikat 6",
+    title: "Piagam Penghargaan lomba kejuaraan MTQ",
+    description:
+      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya dalam lomba kejuaraan MTQ yang berhasil mendapatkan juara ke 3.",
+  },
+  {
     alt: "Sertifikat 9",
     title: "Sertifikat Partisipasi",
     description:
@@ -62,12 +68,6 @@ const certificatesInfo = [
     title: "Sertifikat Lolos Internal KMI Expo XV 2024",
     description:
       "Sertifikat ini diberikan sebagai pengakuan atas keberhasilan saya lolos seleksi internal KMI Expo XV 2024.",
-  },
-  {
-    alt: "Sertifikat 11",
-    title: "Sertifikat Juara 1 Lomba MTQ",
-    description:
-      "Sertifikat ini diberikan sebagai pengakuan atas prestasi saya sebagai Juara 1 dalam lomba MTQ.",
   },
   {
     alt: "Sertifikat 12",
@@ -198,8 +198,9 @@ const CertificatePage = forwardRef((props, ref) => {
       <div className="max-w-2xl text-center space-y-3">
         <h1 className="text-3xl font-bold">Sertifikat Saya</h1>
         <p className="text-gray-700">
-          Berikut adalah beberapa sertifikasi dan kursus yang telah saya
-          selesaikan untuk meningkatkan keahlian saya.
+          Berikut adalah beberapa sertifikasi penghargaan yang saya dapatkan
+          dari berbagai perlombaan dan kegiatan lain untuk meningkatkan keahlian
+          saya.
         </p>
       </div>
 
