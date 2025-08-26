@@ -4,6 +4,7 @@ import {
   FaBehanceSquare,
   FaInstagram,
   FaLinkedinIn,
+  FaTiktok,
 } from "react-icons/fa";
 
 // Menggunakan font yang sama dengan Navbar untuk konsistensi
@@ -41,12 +42,20 @@ export default function Footer() {
           {/* Elemen 3: Logo Media Sosial */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/herawwwati?igsh=MTBjN3dnbTNhOHU2Yw=="
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
             >
               <FaInstagram />
+            </a>
+            <a
+              href="https://www.tiktok.com/@herrrraw?_t=ZS-8zCLTF91QLY&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <FaTiktok />
             </a>
             <a
               href="https://www.behance.net/anaksahawat"
@@ -57,7 +66,7 @@ export default function Footer() {
               <FaBehanceSquare />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/anak-sarbini-hawat-398514337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
