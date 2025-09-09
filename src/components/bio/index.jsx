@@ -131,8 +131,7 @@ const biodataDetails = [
   { label: "Jenis Kelamin", value: "Perempuan" },
   {
     label: "Alamat",
-    value:
-      "Kp.babakan RT 10 RW 02, Desa Cijurey, Kec Gegerbitung, Kab Sukabumi, GEGER BITUNG, JAWA BARAT, ID 43197",
+    value: "Sukabumi, Indonesia",
   },
 ];
 
