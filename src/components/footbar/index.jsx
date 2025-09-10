@@ -42,7 +42,7 @@ export default function Footer() {
           {/* Elemen 3: Logo Media Sosial */}
           <div className="flex items-center space-x-4">
             <a
-              href="https://www.instagram.com/herawwwati?igsh=MTBjN3dnbTNhOHU2Yw=="
+              href="https://www.instagram.com/herawati.art?igsh=dXo4aGM3bW5hNW5p"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
@@ -58,7 +58,7 @@ export default function Footer() {
               <FaTiktok />
             </a>
             <a
-              href="https://www.behance.net/anaksahawat"
+              href="https://www.tiktok.com/@hawakhadijah02?_t=ZS-8zbl8ecDpaB&_r=1"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition-opacity"
