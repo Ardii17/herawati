@@ -29,7 +29,7 @@ const workExperiences = [
     position: "Publik Relationship Industri Kreatif (Needleloops)",
     type: "Paruh Waktu",
     location: "Remote",
-    period: "Januari 2023 - Mei 2023",
+    period: "Maret 2024 - Juli 2025",
     description: ["Pengelola hubungan komunikasi kerja sama berbagai mitra"],
   },
   {
@@ -38,7 +38,7 @@ const workExperiences = [
     position: "Reseller, Dropshiper, dan Affiliator",
     type: "Paruh Waktu",
     location: "Remote",
-    period: "Januari 2023 - Mei 2023",
+    period: "Januari 2023 - Sekarang",
     description: [
       "Menjalankan penjualan produk sebagai reseller, dropshiper, dan affiliator yang mencakup promosi, manajemen pesanan, dan layanan pelanggan.",
     ],
